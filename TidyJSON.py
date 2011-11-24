@@ -19,6 +19,9 @@ class TidyJsonCommand(sublime_plugin.TextCommand):
             self.settings[setting] = settings.get(setting)
 
     def parse_json(self, input):
+        if len(input) == 0:
+            return
+
         text = None
 
         try:
