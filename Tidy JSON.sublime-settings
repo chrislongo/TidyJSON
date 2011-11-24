@@ -1,0 +1,16 @@
+{
+	// Sets indent width.  Less (or zero) for more compact code.
+	"indent_width": 4,
+
+	// Separates list items. Clean out whitespace for more compact code.
+	"item_seperator": ", ",
+
+	// Separates dictionary name/value pairs. Clean out whitespace for more compact code.
+	"dictionary_seperator": ": ",
+	
+	// Sorts dictionaries by key.
+	"sort_keys": false,
+
+	// Compact JSON.  No linefeeds or whitespace.  Will override the "indent_width" setting.
+	"compact": false
+}

@@ -1,0 +1,38 @@
+[
+    {
+        "mnemonic": "n", 
+        "caption": "Preferences", 
+        "id": "preferences", 
+        "children": [
+            {
+                "mnemonic": "P", 
+                "caption": "Package Settings", 
+                "id": "package-settings", 
+                "children": [
+                    {
+                        "caption": "Tidy JSON", 
+                        "children": [
+                            {
+                                "caption": "Settings \u2013 Default", 
+                                "args": {
+                                    "file": "${packages}/Tidy JSON/Tidy JSON.sublime-settings"
+                                }, 
+                                "command": "open_file"
+                            }, 
+                            {
+                                "caption": "Settings \u2013 User", 
+                                "args": {
+                                    "file": "${packages}/User/Tidy JSON.sublime-settings"
+                                }, 
+                                "command": "open_file"
+                            }, 
+                            {
+                                "caption": "-"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
