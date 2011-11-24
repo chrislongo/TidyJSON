@@ -10,19 +10,19 @@
                 "id": "package-settings", 
                 "children": [
                     {
-                        "caption": "Tidy JSON", 
+                        "caption": "TidyJSON", 
                         "children": [
                             {
                                 "caption": "Settings \u2013 Default", 
                                 "args": {
-                                    "file": "${packages}/Tidy JSON/Tidy JSON.sublime-settings"
+                                    "file": "${packages}/TidyJSON/TidyJSON.sublime-settings"
                                 }, 
                                 "command": "open_file"
                             }, 
                             {
                                 "caption": "Settings \u2013 User", 
                                 "args": {
-                                    "file": "${packages}/User/Tidy JSON.sublime-settings"
+                                    "file": "${packages}/User/TidyJSON.sublime-settings"
                                 }, 
                                 "command": "open_file"
                             }, 
