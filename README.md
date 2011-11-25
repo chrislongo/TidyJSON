@@ -6,7 +6,7 @@ Control+Shift+J will format the current document.  Will format a selection as lo
 
 # Issues
 
-* Not sure how non UTF-8 encodings are handled.
+* Non UTF-8 encodings are not handled well in Sublime Text 2 versions below 2144.
 
 # Install
 

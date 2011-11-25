@@ -44,14 +44,25 @@ class TidyJsonCommand(sublime_plugin.TextCommand):
         return re.sub(pattern, '', text)
 
     def filter(self, edit, region):
-        text = self.parse_json(self.view.substr(region).encode('utf-8'))
+        encoding = u'UTF-8'
+
+        version = int(sublime.version())
+
+        if(version >= 2144):
+            view_encoding = self.view.encoding()
+
+            if view_encoding != 'Undefined':
+                encoding = view_encoding
+
+        text = self.parse_json(
+            self.view.substr(region).encode(encoding))
 
         if text is not None:
 
             if self.settings.get('compact'):
                 text = self.compact(text)
 
-            self.view.replace(edit, region, text.decode('utf-8'))
+            self.view.replace(edit, region, text.decode(encoding))
 
     def run(self, edit):
         self.load_settings()
