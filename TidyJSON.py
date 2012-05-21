@@ -41,7 +41,7 @@ class TidyJsonCommand(sublime_plugin.TextCommand):
 
         return text
 
-    def compact(text):
+    def compact(self, text):
         pattern = re.compile(r"\s+")
         return re.sub(pattern, "", text)
 
