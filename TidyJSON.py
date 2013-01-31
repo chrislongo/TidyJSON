@@ -15,7 +15,6 @@ class TidyJsonCommand(sublime_plugin.TextCommand):
                         "dictionary_seperator",
                         "sort_keys",
                         "compact"]:
-
             self.settings[setting] = settings.get(setting)
 
     def parse_json(self, input, encoding='utf-8'):
@@ -35,7 +34,6 @@ class TidyJsonCommand(sublime_plugin.TextCommand):
                 sort_keys=self.settings.get("sort_keys"),
                 separators=(self.settings.get("item_seperator"),
                             self.settings.get("dictionary_seperator")))
-
         except ValueError:
             sublime.error_message("Malformed JSON.")
 
@@ -47,14 +45,12 @@ class TidyJsonCommand(sublime_plugin.TextCommand):
 
     def filter(self, edit, region):
         encoding = "utf-8"
-
         version = int(sublime.version())
 
-        if(version >= 2144):
-            view_encoding = self.view.encoding()
+        view_encoding = self.view.encoding()
 
-            if view_encoding != "Undefined":
-                encoding = view_encoding
+        if view_encoding != "Undefined":
+            encoding = view_encoding
 
         text = self.parse_json(
             self.view.substr(region).encode(encoding), encoding)
@@ -66,7 +62,6 @@ class TidyJsonCommand(sublime_plugin.TextCommand):
 
     def run(self, edit):
         self.load_settings()
-
         regions = self.view.sel()
 
         if len(regions) == 1 and regions[0].empty():
