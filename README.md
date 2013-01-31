@@ -12,13 +12,13 @@ Control+Shift+J will format the current document.  Will format a selection as lo
 
 1. Change to Sublime Text packages folder:  
 
-	* **OS:** "~/Libary/Application Support/Sublime Text 2/Packages/User"
+	* **OS X:** "~/Library/Application Support/Sublime Text 2/Packages/User"
 	* **Windows:** "%APPDATA%\Sublime Text 2\Packages\User"
 	* **Linux:** "~/.config/sublime-text-2/Packages/User"
 
 2. Run the command:
 
-	`git://github.com/chrislongo/TidyJSON.git`
+	`git clone git://github.com/chrislongo/TidyJSON.git`
 
 3. Preferences->Package Settings->TidyJSON->Settings Default contains settings that can be tweaked per system.
 
