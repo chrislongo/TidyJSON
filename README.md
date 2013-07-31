@@ -12,9 +12,9 @@ Control+Shift+J will format the current document.  Will format a selection as lo
 
 1. Change to Sublime Text packages folder:  
 
-	* **OS X:** "~/Library/Application Support/Sublime Text 2/Packages/User"
-	* **Windows:** "%APPDATA%\Sublime Text 2\Packages\User"
-	* **Linux:** "~/.config/sublime-text-2/Packages/User"
+	* **OS X:** "~/Library/Application Support/Sublime Text 2/Packages"
+	* **Windows:** "%APPDATA%\Sublime Text 2\Packages"
+	* **Linux:** "~/.config/sublime-text-2/Packages"
 
 2. Run the command:
 
